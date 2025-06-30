@@ -4,22 +4,17 @@ export const commonStyles = StyleSheet.create({
     // ----------------------- home
     home:{
         direction:'rtl',
+        flex: 1,
     },
     // ----------------------- header
     header: {
+        padding:16,
         flexDirection: 'row',
         justifyContent: 'space-between',
-        paddingHorizontal: 16,
-        paddingTop: 24,
-        paddingBottom: 12,
         alignItems: 'center'
     },
     // ----------------------- searchButton
     searchButton: {
-        padding: 8,
-        height: 40,
-        width: 40,
-        borderRadius: 8,
         justifyContent: 'center',
         alignItems: 'center',
     },
@@ -28,14 +23,33 @@ export const commonStyles = StyleSheet.create({
         fontSize: 16,
         fontWeight: '600',
     },
-    // ----------------------- searchButton
-    shadowBox: {
-        backgroundColor: '#fff',
-        shadowColor: '#707070',
-        shadowOffset: { width: 6, height: 6 },
-        shadowOpacity: 0.3,
-        shadowRadius: 14,
-        elevation: 8, // برای Android
-        borderRadius: 12
+    // ----------------------- backgroundImage
+    background: {
+    flex: 1,
     },
+    overlay: {
+    flex: 1,
+    backgroundColor: 'rgba(255,255,255,0.1)' // اگه بخوای تار شه
+    },
+    // ----------------------- HourlyForecast
+    HourlyForecast: {
+        gap:16,
+        paddingBottom:16,
+    },
+    HourlyForecastItem: {
+        alignItems:'center',
+    },
+    HourlyForecastItemImg: {
+        width:50,
+        height:50,
+        marginBlock:10,
+        backgroundColor:'#dedede',
+    },
+    // ----------------------- borderView
+    borderView: {
+        marginInline:24,
+        borderTopWidth:1,
+        borderTopColor:'#dadada',
+    }
+
 });
