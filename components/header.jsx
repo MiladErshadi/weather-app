@@ -1,8 +1,9 @@
-import {  View, Text, TouchableOpacity } from 'react-native';
+import {  View, TouchableOpacity } from 'react-native';
 import Feather from '@expo/vector-icons/Feather';
 import { useNavigation } from '@react-navigation/native';
 import { commonStyles } from '../style/commonStyles';
 import FontAwesome5 from '@expo/vector-icons/FontAwesome5';
+import WhiteText from './WhiteText';
 
 export default function Header() {
   const navigation = useNavigation();
@@ -11,12 +12,10 @@ export default function Header() {
     <View style={commonStyles.header}>
       <TouchableOpacity
         style={[commonStyles.searchButton]}
-        // onPress={() => navigation.navigate('Search')}
       >
-        <Feather name="menu" size={24} color="black"/>
+        <Feather name="menu" size={24} color="#fff"/>
       </TouchableOpacity>
-      <Text style={commonStyles.name}><FontAwesome5 name="map-marker-alt" size={14} color="#181818" /> shiraz</Text>
+      <WhiteText style={commonStyles.name}><FontAwesome5 name="map-marker-alt" size={14} color="#fff" /> شیراز</WhiteText>
     </View>
   );  
 }
-
