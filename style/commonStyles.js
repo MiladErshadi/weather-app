@@ -11,13 +11,19 @@ export const commonStyles = StyleSheet.create({
     },
     // ----------------------- header
     header: {
+        position: 'absolute',
+        top: 0,
+        left: 0,
+        right: 0,
+        zIndex: 1000,
         display:'flex',
-        top:0,
+        direction:'rtl',
+        paddingTop:32,
         padding:16,
         flexDirection: 'row',
         justifyContent: 'space-between',
-        alignItems: 'center'
-    },
+        alignItems: 'center',
+  },
     // ----------------------- searchButton
     searchButton: {
         justifyContent: 'center',
@@ -47,10 +53,6 @@ export const commonStyles = StyleSheet.create({
     // ----------------------- backgroundImage
     background: {
     flex: 1,
-    },
-    overlay: {
-    flex: 1,
-    backgroundColor: 'rgba(255,255,255,0.1)' // اگه بخوای تار شه
     },
     // ----------------------- HourlyForecast
     WeatherForecast: {
@@ -99,7 +101,8 @@ export const commonStyles = StyleSheet.create({
         flexDirection:'row',
         justifyContent:'space-evenly',
         backgroundColor:'#fff3',
-        marginBlock:8,
+        marginTop:8,
+        marginBottom:16,
         marginInline:16,
         borderRadius:16,
         paddingBlock:24,
@@ -107,6 +110,41 @@ export const commonStyles = StyleSheet.create({
     SunriseAndSunsetItem:{
         alignItems:'center',
         justifyContent:'center'
+    },
+    // ----------------------- Search
+    searchContainer:{
+        padding:16,
+    },
+    searchBox: {
+        height:40,
+        flexDirection:'row',
+        justifyContent:'space-between',
+        backgroundColor:'#383838',
+        borderRadius: 32,
+        alignItems:'center',
+        paddingInline:12,
+        gap:4,
+    },
+    SearchIcon: {
+    },
+    SearchInput: {
+        color:'#fff',
+        height:'100%',
+        flex:1,
+    },
+    ScrollSearch: {
+        paddingInline:16,
+        paddingBottom:16,
+        gap:16,
+    },
+    SearchItem: {
+        backgroundColor:'#888',
+        flexDirection:'row-reverse',
+        justifyContent:'space-between',
+        paddingInline:16,
+        paddingBlock:12,
+        borderRadius:16,
+        alignItems:'center',
     },
     // ----------------------- borderView
     borderView: {
@@ -116,7 +154,9 @@ export const commonStyles = StyleSheet.create({
     },
 
     cfgf: {
-        flexDirection:'row', gap:16, paddingInline: 24
+        flexDirection:'row',
+        gap:16,
+        paddingInline: 24,
     }
 
 });

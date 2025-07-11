@@ -45,9 +45,9 @@ export default function HomeScreen() {
     style={commonStyles.background}
     resizeMode="cover"
     >
-        <SafeAreaView style={{flex:1}}>
+        <Header/>
+        <SafeAreaView style={{flex:1,paddingTop:42}}>
             <ScrollView style={commonStyles.home}>
-                <Header/>
                 <View style={commonStyles.CurrentTemperature}>
                     <View style={{alignItems:'center'}} >
                         <WhiteText style={commonStyles.Temperature}>16</WhiteText>
